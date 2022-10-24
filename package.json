@@ -1,0 +1,16 @@
+{
+  "name": "modex-fetch",
+
+  "version": "1.0.0",
+
+  "description": "A package for handling requests based on the fetch API, with the ability to cache the responses, store the requests and abort requests and a lot more",
+  
+  "main": "index.js",
+  "scripts": {},
+
+  "keywords": ["fetch", "requests"],
+
+  "author": "Mourad EL CADI",
+
+  "license": "ISC"
+}
