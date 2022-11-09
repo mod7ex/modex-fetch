@@ -6,7 +6,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/modex98/modex-fetch.git"
-},
+  },
 
   "description": "A package for handling requests based on the fetch API, with the ability to cache the responses, store the requests and abort requests and a lot more",
   
