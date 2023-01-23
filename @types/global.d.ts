@@ -7,6 +7,8 @@ declare global {
 
   declare type NullableNumberish = Numberish | undefined | null;
 
+  type Value<T extends object> = T[keyof T];
+
   declare type NoneNullableValueKeys<T extends object> = Value<{
     [K in keyof T]: T[K] extends TEmpty ? never : K;
   }>;

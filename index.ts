@@ -1,4 +1,4 @@
-import RequestsMap from "${HOME}/.modex-fetchrc";
+// import RequestsMap from "${HOME}/.modex-fetchrc";
 import { cleanShallowCopy, createAbortion, headers as default_headers, payload_to_query, path_join, pick, plurify, type Plurify } from "./utils";
 import uuidGen from "./utils/uuid";
 
@@ -224,7 +224,7 @@ export const raw_request = async <T extends Data, E = any>(payload?: RawRequest)
     checkResponse(response);
 
     // cache only on a success response
-    if (cache) cacheResponse(key!, response);
+    if (cache) cacheResponse(key!, response.clone());
 
     return responseToSuccessResult<T>(response, key);
   } catch (error: any) {
